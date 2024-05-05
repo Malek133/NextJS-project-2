@@ -7,7 +7,11 @@ import { Article } from "@/utils/Types";
 
 const ArticlesPage = async () => {
 
- const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+ const res = await fetch('https://jsonplaceholder.typicode.com/bbposts');
+
+ if(!res.ok){
+  throw new Error("Tnak Kho !");
+ }
  const  articles:Article[] = await res.json(); 
  
   return (
