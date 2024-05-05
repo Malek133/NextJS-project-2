@@ -1,8 +1,5 @@
-import ArticlesItem from "@/components/articles/ArticlesItem"
+import ArticlesItem from "@/components/articlesItem/ArticlesItem"
 import { Article } from "@/utils/Types";
-
-
-
 
 
 const ArticlesPage = async () => {
