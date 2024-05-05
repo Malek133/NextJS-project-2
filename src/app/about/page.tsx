@@ -1,6 +1,5 @@
 
-import Image from 'next/image'
-import CloudImage from '../../../public/cloud-hosting.png'
+
 const AboutPage = () => {
   return (
    <section className='fix-height m-auto container'>
@@ -25,12 +24,6 @@ const AboutPage = () => {
       to simplify an existing application, Redux Toolkit 
       can help you make your Redux code better
       </p>
-
-      <div>
-        <Image src={CloudImage} 
-        height={500} width={500}
-        priority={true} alt='y' />
-      </div>
 
    </section>
   )
