@@ -4,7 +4,7 @@ import React from 'react'
 import { Label } from "@/components/ui/label"
 const LoginPage = () => {
   return (
-    <div className='flex flex-col
+    <div className='flex flex-col fix-height
     items-center justify-center py-12'>
       <div className='border-2 border-black 
       rounded py-2 px-6'>

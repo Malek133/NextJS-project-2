@@ -9,7 +9,7 @@ interface ErrorProps {
 
 const error = ({error,rest}:ErrorProps) => {
   return (
-    <div className="text-center my-3">
+    <div className="text-center my-3 fix-height">
       <div className=" my-3 text-center text-3xl 
        font-semibold text-red-600">
         il y a une error !!...</div>

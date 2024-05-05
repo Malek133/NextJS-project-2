@@ -4,6 +4,7 @@ import { Inter,
  } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 // const kufiarabic = Noto_Kufi_Arabic({subsets:['arabic'],weight:['300']})
@@ -21,7 +22,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <Header />
-        {children}</body>
+        <main>{children}</main>
+        <Footer />
+        </body>
+        
     </html>
   );
 }
