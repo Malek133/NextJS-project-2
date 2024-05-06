@@ -44,15 +44,17 @@ const Header = () => {
         {/* )} */}
           
             <li>
-           <button className='bg-blue-900 text-white rounded 
+          <Link href={'/login'}> 
+          <button className='bg-blue-900 text-white rounded 
            px-5 py-1 my-4'>
-            <Link href={'/login'}>login</Link>
-            </button>
+            login
+            </button></Link>
         
-            <button className='bg-blue-900 text-white rounded 
+           <Link href={'/register'}> 
+           <button className='bg-blue-900 text-white rounded 
             px-5 py-1 mx-2 my-4'>
-              <Link href={'/register'}>register</Link>
-              </button>
+              register
+              </button></Link>
               
         </li>
 
