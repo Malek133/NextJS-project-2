@@ -1,4 +1,5 @@
 import AddCommentForm from "@/components/comment/AddCommentForm";
+import CommentItem from "@/components/comment/CommentItem";
 import { Article } from "@/utils/Types";
 
 
@@ -37,6 +38,10 @@ const SingleArticlePage = async ({ params }: SingleArticlePageProps) => {
     <AddCommentForm />
     <span></span>
     </div>
+    <h3 className="my-3 text-2xl font-medium">Comment Item</h3>
+    <CommentItem />
+    <CommentItem />
+    <CommentItem />
 
   </section>  
   
