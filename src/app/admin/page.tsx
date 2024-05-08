@@ -1,13 +1,14 @@
-import Link from 'next/link'
-import React from 'react'
+import AddArticleForm from "./AddArticleForm"
 
 const AdminPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-screen'>
-      AdminPage
-      <button className='bg-black text-white rounded p-1'>
-      <Link href={'/'}>Back to home</Link>
-      </button>
+    <div className="fix-height flex items-center justify-center px-3 lg:px-20">
+      <div className="shadow p-2 rounded w-full">
+        <h2 className="text-xl lg:text-2xl text-gray-700 font-semibold mb-4">
+          Add New Article
+        </h2>
+        <AddArticleForm />
+      </div>
     </div>
   )
 }

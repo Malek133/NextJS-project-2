@@ -12,7 +12,7 @@ const Header = () => {
       
 
       <ul className="flex justify-around  py-2 items-center space-x-2 
-         mx-6 px-6 bg-slate-200">
+         mx-6 px-6 bg-slate-100">
 
          <div className="flex md:hidden">
          {

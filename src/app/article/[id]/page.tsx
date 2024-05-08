@@ -1,3 +1,4 @@
+import AddCommentForm from "@/components/comment/AddCommentForm";
 import { Article } from "@/utils/Types";
 
 
@@ -16,7 +17,9 @@ const SingleArticlePage = async ({ params }: SingleArticlePageProps) => {
   const  article:Article[] = await res.json(); 
 
   return (
-    <section className="container fix-height flex justify-center items-center">
+  
+    <section className="container fix-height bg-slate-100">
+     <div className="container my-5 flex justify-center items-center">
 
      <span></span>
     <div className=" p-5 cursor-pointer 
@@ -27,7 +30,16 @@ const SingleArticlePage = async ({ params }: SingleArticlePageProps) => {
     
   </div>
   <span></span>
-  </section>
+  </div>
+
+  <div className="my-5 flex justify-around items-center">
+    <span></span>
+    <AddCommentForm />
+    <span></span>
+    </div>
+
+  </section>  
+  
   )
 }
 
