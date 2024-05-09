@@ -12,6 +12,7 @@ const ArticlesPage = async ({ searchParams } : ArticlesPageProps) => {
 
   const { pageNumber } = searchParams;
 
+  await new  Promise(resolve => setTimeout( resolve, 2000));
 
  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
 

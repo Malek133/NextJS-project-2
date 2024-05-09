@@ -1,7 +1,8 @@
 import Hero from "@/components/home/Hero";
 import WebHostingPlan from "@/components/home/WebHostingPlan";
 
-export default function Home() {
+ const Home = ()=> {
+  
   return (
    <section>
     <Hero />
@@ -17,3 +18,4 @@ export default function Home() {
    </section>
   );
 }
+export default  Home
