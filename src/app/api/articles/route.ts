@@ -37,10 +37,10 @@ export async function POST(request: NextRequest) {
     }
 
     const newArticle:Article = {
+        id:articles.length +1,
+        userId:200,
         title:body.title,
         body:body.body,
-        id:articles.length +1,
-        userId:200
     }
 
     articles.push(newArticle);
